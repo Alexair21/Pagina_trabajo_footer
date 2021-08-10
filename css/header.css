@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body{
+    background: whitesmoke;
+    font-family: 'Nunito', sans-serif;
+}
+
+.iconomenu{
+    color: red;
+    text-align: end;
+    font-size: 22px;
+    display: none;
+}
+
+/*****************************************MENU****************************************************/
+.menu{
+    width: 70%;
+    margin-left: 28%;
+    /*border: 1px solid olivedrab;*/
+}
+
+.menu_lista{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px; 
+}
+
+.menu_item a{
+    text-decoration: none;
+    color: #2c4964;
+}
+
+.menu_item a:hover, .inicio a{
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+@media(max-width : 980px){  /*0 - 980px*/
+    .menu{
+        display: none;
+    }
+    .iconomenu{
+        display: block;
+    }
+}
+
+/*****************************************BANNER****************************************************/
+
+.banner{
+    width: 100%;
+    height: 420px;
+    background-image: url('../img/alumnos.jpg');
+}
+
+.banner h2, .banner h4, .banner button{
+    color: white;
+    margin-left: 90px;  
+}
+
+.banner h2{
+    padding-top: 150px;
+}
+
+.banner button{
+    background: red;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.banner button:hover{
+    background:rgb(78, 78, 233);
+    cursor: pointer;
+}
+
+/******************************************NUESTROS VALORES***************************************************/
+
+.valor{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    margin-top: -100px;
+    font-size: 12px;
+}
+
+.valor_nuestro, .valor_item{
+    height: 250px;
+    border-radius: 10px;
+}
+
+.valor_item .fas{
+    color: red;
+    font-size: 24px;
+}
+
+.valor_nuestro{
+    background: red;
+    color: white;
+}
+
+.valor_item{
+    background: white;
+}
+.valor_nuestro h2, .valor_nuestro p, .valor_item h4, .valor_item p{
+    margin: 20px;
+}
+
+.valor_item p, .valor_item h4{
+    text-align: center;
+}
+
+.valor_item p{
+    color: rgb(158, 154, 154);
+}
+
+.valor_boton{
+    display: flex;
+    justify-content: center;
+}
+
+.valor_nuestro button{
+    background: rgb(218, 82, 82);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: 12px;
+}
+
+.valor_nuestro button:hover{
+    background: white;
+    color: red;
+    cursor: pointer;
+}
+
+@media(max-width : 980px){  /*0 - 980px*/
+    .valor{
+        display: block;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+/****************************************NOSOTROS*****************************************************/
+
+.nosotros{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    margin-top: 80px;
+}
+
+.nosotros_imagen{
+    width: 100%;
+}
+
+.nosotros_imagen img{
+    width: 100%;
+}
+                                    /*APLICANDO RESPONSIVE DESIGN*/
+@media(max-width : 576px){
+    .nosotros{
+        display: block;
+        font-size: 12px;
+        font-style: italic;
+    }
+}
+/*************************************LINEAS DE ACCION********************************************************/
+
+.lineas, .formulario{
+    background: #f1f7fd;
+    padding: 50px;
+}
+
+.lineas h2, .formulario h2, .proyectos__titulos h2{
+    text-align: center;
+    color: rgb(34, 34, 121);
+    padding-top: 50px;
+}
+
+.lineas_barra{
+    width: 3%;
+    margin: auto;
+    border-top: 3px solid red;
+}
+
+.lineas_contenedor{ /*801 - a más px*/
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    margin-top: 30px;
+}
+
+.lineas_item{
+    background: white;
+    font-size: 12px;
+    text-align: center;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+}
+
+.lineas_item .fas{
+    color: red;
+    font-size: 30px;
+    display: flex;
+    margin-top: -25px;
+    justify-content: center;
+}
+                                    /*APLICANDO RESPONSIVE DESIGN*/
+@media(max-width : 800px){  /*577 - 800px*/
+    .lineas_contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width : 576px){  /*0 - 576px*/
+    .lineas_contenedor{
+        display: block;
+        /*grid-template-columns: repeat(1, 1fr);*/
+    }
+}
+
+/*********************************PROYECTOS REALIZADOS*******BPM*****************************************************/
+
+.proyectos{
+    background: white;
+    text-align: center;
+}
+
+
+.proyetos__contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    width: 80%;
+    margin: auto;
+    /*border: 3px solid red;*/
+}
+
+.proyectos__item{
+    border: 1px solid #d5e1ed;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+.im{
+    width: 100%;
+    height: 50%;
+}
+
+.proyectos__item:hover{
+    background: red;
+    color: white;
+}
+                                    /*APLICANDO RESPONSIVE DESIGN*/
+@media(max-width : 1000px){  /*577 - 800px*/
+    .proyetos__contenido{
+        display: block;
+    }
+}
+
+@media(max-width : 576px){  /*0 - 576px*/
+    .proyetos__contenido{
+        display: block;
+        /*grid-template-columns: repeat(1, 1fr);*/
+    }
+}
+
+/**************************************FORMULARIO DE CONTACTO*******************************************************/
+.formulario_form{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 20px;
+    margin-top: 20px;
+}
+
+.formulario_form input{
+    width: 100%;
+    border: 1px solid rgb(228, 209, 209);
+    height: 30px;
+}
+
+.formulario_form .tarea, .formulario_boton{   
+   grid-column-start: 1;
+   grid-column-end: 4;  
+}
+
+.formulario_form textarea{
+    width: 100%;
+    border: 1px solid rgb(228, 209, 209);
+}
+
+.formulario_boton{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario_boton button{
+    background: red;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+}
+
+@media(max-width : 765px){  /*0 - 765px*/
+    .formulario_form{
+        display: block;
+    }
+    .formulario_item{
+        margin-bottom: 10px;
+    }
+}
+/************************************FOOTER*********************************************************/
+
+footer{
+    display: block;
+}
+
+.contenedor{
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    padding: 80px;
+    column-gap: 80px;
+    
+}
+
+.item{
+    width: 200px; 
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style:none;
+    margin-left: -40px;
+}
+a:hover{
+    color: red;
+}
+
+.form{
+    border: 1px solid #bfdcf7;
+    border-radius: 25px;
+    position: relative;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.input{
+    margin-left: 17px;
+    margin-top: 7px;
+    width: 180px;
+    height: 30px;
+    border:none;
+}
+.button{
+    border: 1px solid red;
+    background-color:red;
+    border-radius: 25px;
+    color:#fff;
+    font-size:20px;
+    
+}
+.button:hover{
+    background-color:rgb(78, 78, 233);
+    border: 1px solid rgb(78, 78, 233);
+    cursor: pointer;
+}
+
+.cuatro{
+    width: 300px;
+}
+.a{
+    width: 250px;
+}
+
+.item .fas{
+    color: rgb(78, 78, 233);
+    padding: 11px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+@media(max-width : 1000px){
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media(max-width : 770px){ 
+    .contenedor{
+        display: block;
+    }
+
+    .cuatro{
+        width: 100%;
+    }
+    .button{
+        width: 150px;
+        margin-left:100px;
+    }
+}
+
+.credits{
+    background-color: #f1f7fd;
+    line-height: 8%;
+    padding-left: 150px;
+    margin-top: -10px;
+    height: 100px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+.link_n{
+    color: red;
+}
+.link_n:hover{
+    color: blue;
+}
+
+
+
+
+
+/*********************************************************************************************/
