@@ -405,21 +405,6 @@ h3{
     }
 }
 
-
-@media(max-width : 770px){ 
-    .contenedor{
-        display: block;
-    }
-
-    .cuatro{
-        width: 100%;
-    }
-    .button{
-        width: 150px;
-        margin-left:100px;
-    }
-}
-
 .credits{
     background-color: #f1f7fd;
     line-height: 8%;
@@ -435,6 +420,26 @@ h3{
 .link_n:hover{
     color: blue;
 }
+
+@media(max-width : 400px){ 
+    .contenedor{
+        display: block;
+    }
+
+    .cuatro{
+        width: 100%;
+    }
+    .button{
+        width: 80px;
+        margin-left:-80px;
+        font-size: 12px;
+    }
+    .credits{
+        margin-left: -80px;
+    }
+}
+
+
 
 
 
